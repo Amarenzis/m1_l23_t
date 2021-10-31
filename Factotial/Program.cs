@@ -17,18 +17,18 @@ namespace Factotial
 
             Task checkTask = new Task(() =>
             {
-               int pluralityCheck = 1;
-               for (int j = 1; j <= startNumber; j++)
-               {
-                   pluralityCheck *= j;
-                   Console.WriteLine("Проверка работы асинхронного метода в классе Programm - {0}", pluralityCheck);
-                   Thread.Sleep(200);
-               }
+                int pluralityCheck = 1;
+                for (int j = 1; j <= startNumber; j++)
+                {
+                    pluralityCheck *= j;
+                    Console.WriteLine("Проверка работы асинхронного метода в классе Programm - {0}", pluralityCheck);
+                    Thread.Sleep(100);
+                }
             });
             checkTask.Start();
-            
 
-            await Task.WhenAll(FactorialAsync(startNumber),checkTask);
+
+            await Task.WhenAll(FactorialAsync(startNumber), checkTask);
             Console.WriteLine("Метод Main окончил работу.");
             Console.ReadKey();
 
@@ -43,7 +43,7 @@ namespace Factotial
                     plurality *= i;
                     Console.WriteLine("Асинхронный метод сейчас выдаёт значение - {0}", plurality);
                     Thread.Sleep(300);
-                }                
+                }
                 return plurality;
             });
             return result;
