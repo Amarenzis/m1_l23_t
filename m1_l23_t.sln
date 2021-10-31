@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factotial", "Factotial\Factotial.csproj", "{57BEDC01-5B2A-4E2B-8C64-6E14F4D5A839}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factorial", "Factotial\Factorial.csproj", "{57BEDC01-5B2A-4E2B-8C64-6E14F4D5A839}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
